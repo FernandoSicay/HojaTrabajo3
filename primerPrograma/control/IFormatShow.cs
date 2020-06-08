@@ -7,6 +7,9 @@ using System.Text;
 namespace control{
     public interface IFormatShow {
 
+        /// <summary>
+        /// @param args
+        /// </summary>
         public void showData(String[] args);
 
     }

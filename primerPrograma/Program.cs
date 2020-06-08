@@ -7,8 +7,9 @@ namespace primerPrograma
     {
         static void Main(string[] args)
         {
-            IFormatShow formatocvs = new FormatCSV();
-            formatocvs.showData(args);
+            IFormatShow format = new DataFormatDecoratorControl(new FormatShowControl());
+            format.showData(args);
+            //System.Console.Write(args.Length);
         }
     }
 }
